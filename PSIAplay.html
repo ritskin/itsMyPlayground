@@ -2,29 +2,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSIA Home</title>
+    <title>PSIA Playground</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/psia.css">
 
 </head>
 <body>
     <header>
-        <div class="bg-dark py-5 shadow mb-3 text-light">
+        <div class="py-3 shadow mb-3 text-light">
             <div class="container">
-                <h1 class="display-1">PSIA Events</h1>
-                <p class="lead">When event name is blue the scores of the top six contestants are posted.</p>
+                <img src="images/psia.png">
+                <h1 class="display-1">PSIA Playground</h1>
+                <p class="lead">To try out various styles and when you like something copy it to PSIA.html</p>
                 <p>Gray events do not have scores posted yet. Please check back later.</p>
-                
             </div>
         </div>
+    </header>
+    <div class="event-links">
         <div class="container">
             <nav class="psia-nav">
-                <ul class="nav-site">
-                    <li><a class="nav-link" href="Art Memory -- 4,5.html">Art Memory -- 4,5</a></li>
-                    <li><a class="nav-link" href="Art Memory -- 6,7,8.html">Art Memory -- 6,7,8</a></li>
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Art Memory</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Art Memory -- 4,5.html">Art Memory -- 4,5</a></li>
+                          <li><a class="dropdown-item disabled" href="Art Memory -- 6,7,8.html">Art Memory -- 6,7,8</a></li>
+                        </ul>
+                    </li>                  
                     <li><a class="nav-link disabled" href="Calculator Applications -- 6,7,8.html">Calculator Applications -- 6,7,8</a></li>
-                    <li><a class="nav-link disabled" href="Creative Writing -- 1.html">Creative Writing -- 1</a></li>
-                    <li><a class="nav-link disabled" href="Creative Writing -- 2.html">Creative Writing -- 2</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link disabled dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Creative Writing</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link disabled" href="Creative Writing -- 1.html">Creative Writing -- 1</a></li>
+                            <li><a class="nav-link disabled" href="Creative Writing -- 2.html">Creative Writing -- 2</a></li>
+                        </ul>
+                    </li> 
                     <li><a class="nav-link disabled" href="Dictionary Skills -- 4,5.html">Dictionary Skills -- 4,5</a></li>
                     <li><a class="nav-link disabled" href="Dictionary Skills -- 6,7,8.html">Dictionary Skills -- 6,7,8</a></li>
                     <li><a class="nav-link disabled" href="Impromptu Speaking -- 7,8.html">Impromptu Speaking -- 7,8</a></li>
@@ -37,13 +50,18 @@
                     <li><a class="nav-link disabled" href="Maps, Graphs, and Charts -- 6.html">Maps, Graphs, and Charts -- 6</a></li>
                     <li><a class="nav-link disabled" href="Maps, Graphs, and Charts -- 7.html">Maps, Graphs, and Charts -- 7</a></li>
                     <li><a class="nav-link disabled" href="Maps, Graphs, and Charts -- 8.html">Maps, Graphs, and Charts -- 8</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 2.html">Mathematics -- 2</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 3.html">Mathematics -- 3</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 4.html">Mathematics -- 4</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 5.html">Mathematics -- 5</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 6.html">Mathematics -- 6</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 7.html">Mathematics -- 7</a></li>
-                    <li><a class="nav-link disabled" href="Mathematics -- 8.html">Mathematics -- 8</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link disabled dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mathematics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link disabled" href="Mathematics -- 2.html">Mathematics -- 2</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 3.html">Mathematics -- 3</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 4.html">Mathematics -- 4</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 5.html">Mathematics -- 5</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 6.html">Mathematics -- 6</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 7.html">Mathematics -- 7</a></li>
+                            <li><a class="nav-link disabled" href="Mathematics -- 8.html">Mathematics -- 8</a></li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link disabled" href="Modern Oratory -- 7,8.html">Modern Oratory -- 7,8</a></li>
                     <li><a class="nav-link disabled" href="Music Memory -- 3,4.html">Music Memory -- 3,4</a></li>
                     <li><a class="nav-link disabled" href="Music Memory -- 5,6.html">Music Memory -- 5,6</a></li>
@@ -88,8 +106,10 @@
             </nav>
         </div>
 
-    </header>
+    </div>
 
-    
+  <!-- BootStrap JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>   
+   
 </body>
 </html>
